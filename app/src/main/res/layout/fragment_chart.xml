@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minHeight="65dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/add_title"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/btn_bg"
+                android:layout_alignLeft="@+id/btn_bg"
+                android:layout_alignTop="@+id/btn_bg"
+                android:layout_alignEnd="@+id/btn_bg"
+                android:layout_alignRight="@+id/btn_bg"
+                android:layout_alignBottom="@id/btn_bg"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+
+                <TextView
+                    android:id="@+id/btn_week"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_week_normal"
+                    android:gravity="center"
+                    android:text="@string/btn_week"
+                    android:textColor="@color/btn_normal"
+                    android:textSize="18sp"
+                    tools:text="@string/btn_week" />
+
+                <TextView
+                    android:id="@+id/btn_month"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_button_selected"
+                    android:gravity="center"
+                    android:text="@string/btn_month"
+                    android:textColor="@color/btn_selected"
+                    android:textSize="18sp"
+                    tools:text="@string/btn_month" />
+
+                <TextView
+                    android:id="@+id/btn_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_year_normal"
+                    android:gravity="center"
+                    android:text="@string/btn_year"
+                    android:textColor="@color/btn_normal"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp">
+
+            <ImageView
+                android:id="@+id/btn_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_left" />
+
+            <TextView
+                android:id="@+id/now_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="06月"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_outlay"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/btn_outlay"
+                android:textColor="@color/oi_selected"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/outlay_style"
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:background="@drawable/chart_oi_selected"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_income"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/btn_income"
+                android:textColor="@color/oi_normal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/income_style"
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:background="@drawable/chart_oi_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5" />
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/chart_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

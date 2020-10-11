@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <!--内容部分-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin" />
+
+    <!--页底菜单部分-->
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_tab_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_one"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_home_selected" />
+
+            <TextView
+                android:id="@+id/tv_tab_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/tv_tab_one"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_chart_normal" />
+
+            <TextView
+                android:id="@+id/tv_tab_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/tv_tab_two" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_three"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_three"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_tab_add_normal" />
+
+            <TextView
+                android:id="@+id/tv_tab_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="2dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_wealth_normal" />
+
+            <TextView
+                android:id="@+id/tv_tab_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/tv_tab_four" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_person_normal" />
+
+            <TextView
+                android:id="@+id/tv_tab_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/tv_tab_five" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

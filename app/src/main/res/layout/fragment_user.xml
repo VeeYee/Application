@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/add_title"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_head" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/u_username"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="lisa"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/u_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="开始记账的第1天"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:src="@mipmap/icon_edit" />
+
+    </LinearLayout>
+
+    <!--成就徽章-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_badge" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="成就徽章"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="0.3"
+                android:background="#52464646" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--资金管理-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_money" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="资金管理"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--&lt;!&ndash;邀请好友&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_share" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="邀请好友"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>-->
+
+    <!--邀请好友-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_share" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="邀请好友"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="0.3"
+                android:background="#52464646" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- &lt;!&ndash;意见反馈&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_feedback" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="意见反馈"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1px"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="#80464646" />-->
+
+    <!--意见反馈-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_feedback" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="意见反馈"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="0.3"
+                android:background="#52464646" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--关于我们-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@android:color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_about" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="关于我们"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_logout"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logout_button"
+        android:gravity="center"
+        android:text="@string/btn_logout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

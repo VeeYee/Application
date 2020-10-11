@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB7D7EF3</color>
+    <color name="colorPrimaryDark">#7879E9</color><!--状态栏颜色-->
+    <!--<color name="colorPrimaryDark">#F26267EA</color>-->
+    <color name="colorAccent">#C87D7EF3</color>
+
+    <!--自定义颜色-->
+    <color name="col_gray">#8D171718</color>
+    <color name="btn_selected">#FCFBFB</color>
+    <color name="btn_normal">#6E72EC</color>
+    <color name="oi_selected">#0C0C0C</color>
+    <color name="oi_normal">#8F8D8D</color>
+
+    <color name="test">#008577</color>
+    <color name="test2">#00574B</color>
+    <color name="test3">#D81B60</color>
+
+
+</resources>

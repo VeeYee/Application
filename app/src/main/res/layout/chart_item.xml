@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/sort_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/chart_icon_one"
+            android:src="@mipmap/icon_o_baby_selected" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/sort_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center|top|left"
+                android:paddingTop="5dp"
+                android:text="育儿"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sort_percent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top|left"
+                android:paddingTop="5dp"
+                android:text="70%" />
+
+            <TextView
+                android:id="@+id/sort_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center|right|top"
+                android:paddingTop="5dp"
+                android:text="1450.5" />
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/sort_bar"-->
+        <!--android:layout_width="320dp"-->
+        <!--android:layout_height="13dp"-->
+        <!--android:background="@drawable/sort_bar"-->
+        <!--android:paddingBottom="3dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sort_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/sort_bar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

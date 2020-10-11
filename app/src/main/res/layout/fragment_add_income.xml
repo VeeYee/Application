@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_add_income"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbfb"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_wage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_selected"
+                android:src="@mipmap/icon_i_wage_selected" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_wage"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_award"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_award_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_award"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_red"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_red_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_part"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_part_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_part"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_fund"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_fund_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_fund"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_winning"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_winning_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_winning"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_manage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_manage_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_manage"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_business"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_business_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_business"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_transfer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_transfer_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_transfer"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_stock"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_stock_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_stock"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--第三排-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_interest"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_interest_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_interest"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_subsidy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_subsidy_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_subsidy"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/icon_other"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_button_normal"
+                android:src="@mipmap/icon_i_other_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/tv_other"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/add_panel"
+        android:gravity="bottom|center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/input_date"
+            android:layout_alignBottom="@+id/input_date"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/bill_date_i"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:gravity="center|right"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="bottom|center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/input_money"
+            android:layout_alignBottom="@id/input_money"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/bill_money_i"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_money"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center|right"
+            android:inputType="number|numberDecimal"
+            android:maxLength="10"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/input_remark"
+            android:layout_alignBottom="@id/input_remark"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/bill_remark"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_remark"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="无"
+            android:maxLength="10"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="right"
+        android:paddingRight="7dp">
+
+        <ImageView
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:src="@mipmap/icon_save" />
+    </RelativeLayout>
+
+
+</LinearLayout>
